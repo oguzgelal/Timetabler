@@ -1,0 +1,237 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,800,400&subset=latin,cyrillic-ext,latin-ext);
+html, body, * {
+	font-family: 'Open Sans', sans-serif;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.row {
+	margin-bottom: 50px;
+	position: relative;
+}
+.headerText {
+	color: gray;
+	font-size: 35px;
+	font-weight: bolder;
+}
+.section {
+	padding: 20px;
+	background-color: whitesmoke;
+	border: 1px solid gray;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-border-top-left-radius: 0;
+	-moz-border-top-left-radius: 0;
+	-o-border-top-left-radius: 0;
+	border-top-left-radius: 0;
+	z-index: 99;
+}
+.section.header {
+	border-top: none;
+	-webkit-border-top-right-radius: 0;
+	-webkit-border-top-left-radius: 0;
+	-moz-border-top-right-radius: 0;
+	-moz-border-top-left-radius: 0;
+	-o-border-top-right-radius: 0;
+	-o-border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+}
+
+.sectionTitle {
+	position: absolute;
+	top: 1px;
+	left: 0;
+	-webkit-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	transform: translateY(-100%);
+	padding: 5px 10px;
+	color: gray;
+	background-color: whitesmoke;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-top-right-radius: 5px;
+	-moz-border-top-left-radius: 5px;
+	-o-border-top-right-radius: 5px;
+	-o-border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border: 1px solid gray;
+	border-bottom: none;
+	z-index: 999;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.sectionTitle.active {
+	border: 1px solid gray;
+	border-bottom: none;
+	-webkit-border-bottom-right-radius: 0;
+	-webkit-border-bottom-left-radius: 0;
+	-moz-border-bottom-right-radius: 0;
+	-moz-border-bottom-left-radius: 0;
+	-o-border-bottom-right-radius: 0;
+	-o-border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.sectionTitle.notactive {
+	border: 1px dashed gray;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-bottom-right-radius: 5px;
+	-moz-border-bottom-left-radius: 5px;
+	-o-border-bottom-right-radius: 5px;
+	-o-border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.sectionTitle:hover {
+	cursor: pointer;
+}
+
+/* Selector */
+.selector select {
+	height: 400px;
+	overflow: scroll;
+}
+.selectButtonCont {
+	text-align: right;
+	margin-top: 5px;
+}
+select.selectorLectures {
+	padding: 0 !important;
+}
+.selectorLectures option {
+	padding: 10px;
+}
+.selectorLectures option:nth-child(2n-1) {
+	background-color: whitesmoke;
+}
+.selectFilterText {
+	margin-bottom: 10px;
+}
+
+/* Added */
+.emptyTag {
+	text-align: center;
+	color: lightgray;
+}
+.addedCourse {
+	background-color: white;
+	border-bottom: 1px solid lightgray;
+	min-height: 50px;
+	padding-left: 20px;
+}
+.addedCourse:hover {
+	background-color: #FBFCE6;
+}
+.addedCourseItem {
+	float: left;
+	line-height: 50px;
+	vertical-align: middle;
+}
+.addedCourseCode {
+	font-size: 22px;
+	color: black;
+	font-weight: bolder;
+}
+.addedCourseTitle {
+	margin-left: 10px;
+	font-size: 18px;
+	color: gray;
+}
+.removeButton {
+	float: right;
+	font-size: 20px;
+	color: darkred;
+	margin-right: 10px;
+}
+.removeButton:hover {
+	cursor: pointer;
+	text-shadow: 0 0 10px red;
+}
+.removeButton i {
+	line-height: 50px;
+	vertical-align: middle;
+}
+.generateButtonCont {
+	display: none;
+	text-align: right;
+	margin-top: 5px;
+}
+
+/* Programs */
+.program {
+	position: relative;
+	background-color: white;
+	width: 100%;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	min-height: 300px;
+}
+.programDetails {
+	padding: 20px;
+	border: 1px dashed gray;
+	border-top: none;
+	background-color: white;
+	position: relative;
+	height: auto;
+}
+.gap {
+	margin-bottom: 50px;
+}
+.program:last-of-type {
+	margin-bottom: 0;
+}
+.programDay {
+	position: relative;
+	float: left;
+	width: 16.6666666667%;
+	height: 100%;
+	border: 1px solid black;
+}
+.dayText {
+	position: absolute;
+	top: -21px;
+	left: 0;
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	background-color: whitesmoke;
+	color: black;
+	text-align: center;
+	overflow: hidden;
+	font-size: 10px;
+	vertical-align: middle;
+}
+.programLect {
+	position: absolute;
+	left: 0;
+	padding: 5px;
+	color: black;
+	text-align: center;
+	width: 100%;
+}
+.lectData {
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.lectName {
+	font-weight: bolder;
+	font-size: 13px;
+}
+.lectTime {
+	font-size: 11px;
+}
+.lectTitle {
+	font-size: 9px;
+}
+
+

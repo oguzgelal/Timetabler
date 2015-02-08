@@ -1,0 +1,109 @@
+<html>
+<head>
+	<title>TimeTabler for Ozyegin University</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8"> 
+	<link rel="stylesheet" href="tp/bootstrap.min.css">
+	<link rel="stylesheet" href="tp/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="shortcut icon" href="css/favicon.ico" />
+	<script src="tp/jquery-1.11.2.min.js"></script>
+	<script src="tp/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/scripts.js"></script>
+
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-43205300-1', 'oguzgelal.com');
+	ga('send', 'pageview');
+	</script>
+
+</head>
+<body>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=210205559160899&version=v2.0";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<div class="container">
+
+		<!-- Header -->
+		<div class="row section header">
+			<div class="col-xs-12 headerText text-center">TimeTabler for OZU</div>
+			<div class="col-xs-12 text-center">by Oğuz Gelal</div>
+		</div>
+		
+		<!-- Course Select -->
+		<div class="row select">
+			<div class="sectionTitle notactive">What is this ?</div>
+			<div class="section col-xs-12" style="display: none;">
+				<div class="whatisthis">
+					<h4><b>Generate your time table within a few clicks !</b></h4>
+					<p>Timetabler is a web application that generates a timetable for <b>every possible combination</b> of lectures and their sections you are planning to enroll. Just pick the courses from the list, click add. And when you are done, click the Generate button and you will see the possible programs down below.</p>
+					<p>The data is coming form the <u>latest announcements</u> from the school. If you want to inspect the data, you can do so from <b><a href='data/ozu.json' target='_new'>here</a></b>. If you have requests/comments or if you found a bug, please contact me. My mail address is <b><a href='mailto:oguz.gelal@ozu.edu.tr' target="_new">oguz.gelal@ozu.edu.tr</a></b>. Finally, please <b>DO NOT 100% rely on this!</b> Make sure you double check generated timetable is correct!</p>
+					<p><b>To save a result set</b>, just hit CTRL + S on Windows, CMD + S on Mac OS X. You can name the file anything you want. The browser will download an additional folder next to the file, so you might want to download the file inside a seperate folder.</p>
+					<p>
+						<b>Did you like this app ? Share ! So more people could benefit from this...</b> <br>
+						<div class="fb-like" data-href="http://oguzgelal.com/timetabler/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+						<br>
+						<a href="http://twitter.com/share?url=http%3A%2F%2Foguzgelal.com%2Ftimetabler&text=TimeTabler App for OZU&hashtags=timetablerozu" target="_new"><img style="width: 30px; height: 30px;" src="http://www.simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" /></a>
+						<a href="https://plus.google.com/share?url=http%3A%2F%2Foguzgelal.com%2Ftimetabler" target="_new"><img style="width: 30px; height: 30px;" src="http://www.simplesharebuttons.com/images/somacro/google.png" alt="Google" /></a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Course Select -->
+		<div class="row select">
+			<div class="sectionTitle active">Select Courses</div>
+			<div class="section col-xs-12">
+				<div class="selector">
+					<input type="text" class="form-control selectFilterText" placeholder="Filter">
+					<select multiple class="selectorLectures form-control">
+					</select>
+				</div>
+				<div class="selectButtonCont">
+					<input type="button" class="btn btn-success selectButton" value="Add">
+				</div>
+			</div>
+		</div>
+
+		<!-- Course Select -->
+		<div class="row select">
+			<div class="sectionTitle active">Added Courses</div>
+			<div class="section col-xs-12">
+				<div class="addedList">
+					<div class="emptyTag" id="courselect">no course added...</div>
+					<ul class="addedCourses list-unstyled"></ul>
+					<div class="generateButtonCont"> <input type="button" class="btn btn-success generateButton" value="Generate Programs"> </div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Programs -->
+		<div class="row select">
+			<div class="sectionTitle active">Possible Programs</div>
+			<div class="section col-xs-12">
+				<div class="programsCont">
+					<div class="emptyTag" id="programs">no programs generated...</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Comments -->
+		<div class="row select">
+			<div class="sectionTitle active">Comments</div>
+			<div class="section col-xs-12">
+				<div class="fb-comments" data-href="http://oguzgelal.com/timetabler/" data-width="100%" data-numposts="20" data-colorscheme="light"></div>	
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
