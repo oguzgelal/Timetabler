@@ -1,7 +1,7 @@
 # TimeTabler
 **For Ozyegin University**
 
-#### Generate your time table within a few clicks !
+#### Generate your time table within a few clicks ! <a href='http://oguzgelal.com/timetabler' target='_new'>CLICK HERE</a>
 
 Timetabler is a web application that generates a timetable for every possible combination of lectures and their sections you are planning to enroll. Just pick the courses from the list, click add. And when you are done, click the Generate button and you will see the possible programs down below.
 
